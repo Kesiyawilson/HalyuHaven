@@ -33,7 +33,7 @@ const About = () => {
                 </div>
             </div>
 
-            {/* Title: WHY CHOOSE US */}
+            {/* Title: WHYy CHOOSE US */}
             <div style={{ marginTop: '60px' }}>
                 <Title text1="WHY" text2="CHOOSE US" />
 
