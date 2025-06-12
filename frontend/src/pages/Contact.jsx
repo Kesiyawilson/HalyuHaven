@@ -8,7 +8,7 @@ const Contact = () => {
 
   const handleClick = () => {
     setIsClicked(true);
-    setTimeout(() => setIsClicked(false), 200); // Reset color after 200ms
+    setTimeout(() => setIsClicked(false), 200); // Reset colour after 200ms
   };
 
   return (
