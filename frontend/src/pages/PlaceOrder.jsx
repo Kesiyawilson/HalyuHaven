@@ -51,7 +51,7 @@ const PlaceOrder = () => {
         <input className='form-input' type='number' placeholder='Phone' />
       </div>
 
-      {/* Right: Cart & Payment */}
+      {/* Right: Cart & Paymentt */}
       <div className='right-column-wrapper'>
         <div className='cart-total-section-wrapper'>
           <CartTotal />
