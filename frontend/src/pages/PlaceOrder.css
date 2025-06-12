@@ -1,4 +1,3 @@
-/* --- Base Form Input Styles (Existing) --- */
 .form-input {
     border: 1px solid #e0e0e0;
     background-color: #f9f9f9;
@@ -19,7 +18,7 @@
     box-shadow: none;
 }
 
-/* --- Layout and Spacing for the Form Section (Existing) --- */
+/* --- Layout and Spacing for the Form Section --- */
 .delivery-form-container {
     display: flex;
     flex-direction: column;
@@ -28,12 +27,12 @@
     max-width: 480px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 32px; /* Top space for the form itself */
+    margin-top: 32px;
 }
 
 .delivery-title-wrapper {
-    margin-top: 0.75rem; /* 12px */
-    margin-bottom: 0.75rem; /* 12px */
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     font-size: 1.25rem;
 }
 
@@ -54,6 +53,7 @@
         flex-direction: column;
         gap: 12px;
     }
+
     .form-row .form-input {
         width: 100%;
     }
@@ -65,7 +65,7 @@
     }
 }
 
-/* --- Main Page Layout for PlaceOrder (Existing) --- */
+/* --- Main Page Layout for PlaceOrder --- */
 .place-order-page-layout {
     display: flex;
     flex-direction: column;
@@ -73,75 +73,76 @@
     gap: 16px;
     padding-top: 20px;
     padding-left: 20px;
-    padding-right: 80px; /* Your chosen right padding for the overall layout */
+    padding-right: 80px;
     min-height: 80vh;
     border-top: 1px solid #e5e7eb;
 }
 
-/* Right Column Wrapper (holds CartTotal and Payment Method) */
+/* Right Column Wrapper */
 .right-column-wrapper {
     display: flex;
     flex-direction: column;
     gap: 48px;
-    min-width: 280px; /* Base min-width for mobile */
-    margin-top: 32px; /* For mobile stacking */
+    min-width: 280px;
+    margin-top: 32px;
 }
 
-/* cart-total-section-wrapper (Existing) */
+/* Cart Total Section */
 .cart-total-section-wrapper {
     min-width: 280px;
-    font-size: 0.8rem; /* Smaller font for cart totals */
+    font-size: 0.8rem;
 }
 
-/* Payment Method Title Styling (Existing) */
+/* Payment Method Title Styling */
 .payment-method-section .title-container {
     margin-top: 0;
     margin-bottom: 0.75rem;
-    font-size: 0.9rem; /* Smaller font for payment method title on mobile */
+    font-size: 0.9rem;
     text-align: left;
 }
+
 @media (min-width: 640px) {
     .payment-method-section .title-container {
-        font-size: 1.1rem; /* Smaller font for payment method title on desktop */
+        font-size: 1.1rem;
     }
 }
 
-/* Container for payment options (Existing) */
+/* Payment Options Row */
 .payment-options-row {
     display: flex;
-    flex-direction: column; /* Default: Stack options vertically on mobile */
-    gap: 12px; /* Vertical spacing for mobile */
+    flex-direction: column;
+    gap: 12px;
 }
 
-/* --- EDITED: Individual Payment Option Box Styling (Even Smaller) --- */
+/* Payment Option Box */
 .payment-option-box {
     display: flex;
     align-items: center;
-    gap: 8px; /* Reduced gap inside the box */
+    gap: 8px;
     border: 1px solid #e0e0e0;
     border-radius: 0.25rem;
-    padding: 0.4rem 0.6rem; /* Reduced padding for smaller boxes */
+    padding: 0.4rem 0.6rem;
     cursor: pointer;
     background-color: #ffffff;
     transition: all 0.2s ease-in-out;
-    width: 100%; /* Take full width on mobile */
+    width: 100%;
 }
 
 .payment-option-box:hover {
     border-color: #a0a0a0;
 }
 
-/* Style for the hidden actual radio input (Existing) */
+/* Hidden Radio */
 .hidden-radio {
     position: absolute;
     opacity: 0;
     pointer-events: none;
 }
 
-/* --- EDITED: Smaller custom radio circle --- */
+/* Custom Radio Circle */
 .custom-radio-circle {
-    width: 16px; /* Reduced size */
-    height: 16px; /* Reduced size */
+    width: 16px;
+    height: 16px;
     border: 2px solid #a0a0a0;
     border-radius: 50%;
     display: flex;
@@ -153,8 +154,8 @@
 
 .custom-radio-circle::after {
     content: '';
-    width: 8px; /* Reduced size */
-    height: 8px; /* Reduced size */
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #000000;
     opacity: 0;
@@ -169,27 +170,26 @@
     opacity: 1;
 }
 
-/* --- EDITED: Smaller Payment Logos --- */
+/* Payment Logos */
 .payment-option-logo {
-    height: 18px; /* Reduced from 20px */
-    max-width: 60px; /* Reduced from 80px */
+    height: 18px;
+    max-width: 60px;
     object-fit: contain;
     flex-grow: 1;
     text-align: left;
 }
 
-/* --- EDITED: Smaller text for CASH ON DELIVERY --- */
+/* Payment Option Text */
 .payment-option-text {
     color: #666;
-    font-size: 0.75rem; /* Reduced from 0.8rem */
+    font-size: 0.75rem;
     font-weight: 500;
     flex-grow: 1;
     text-align: left;
-    white-space: nowrap; /* Prevent text from wrapping prematurely */
+    white-space: nowrap;
 }
 
-
-/* Media query for larger screens (sm breakpoint: 640px) */
+/* Responsive Layout */
 @media (min-width: 640px) {
     .place-order-page-layout {
         flex-direction: row;
@@ -197,23 +197,42 @@
         gap: 20px;
     }
 
-    /* --- EDITED: Reduce min-width for the right column to make it smaller --- */
     .right-column-wrapper {
-        min-width: 420px; /* Reduced from 550px to make the whole right side smaller */
+        min-width: 420px;
         margin-top: 44px;
     }
 
-    /* --- EDITED: Force payment options to stay in a single row (Existing) --- */
     .payment-options-row {
         flex-direction: row;
-        flex-wrap: nowrap; /* Prevents wrapping, forcing all items onto one line */
+        flex-wrap: nowrap;
         gap: 12px;
-        justify-content: flex-start; /* Align items to the start of the row */
+        justify-content: flex-start;
     }
 
     .payment-option-box {
-        /* These flex properties will make them try to share space evenly */
-        flex: 1 1 calc(33.33% - 8px); /* Roughly 1/3rd width each */
-        max-width: calc(33.33% - 8px); /* Helps maintain relative sizing */
+        flex: 1 1 calc(33.33% - 8px);
+        max-width: calc(33.33% - 8px);
     }
+}
+
+/* ✅ PLACE ORDER BUTTON STYLES */
+.place-order-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.place-order-button {
+    background-color: #000000;         /* Black background */
+    color: #ffffff;                    /* White text */
+    padding: 0.75rem 4rem;             /* py-3 px-16 */
+    font-size: 0.875rem;               /* text-sm (~14px) */
+    font-weight: 500;                  /* Medium weight */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.place-order-button:hover {
+    background-color: #1a1a1a;         /* Slightly lighter black on hover */
 }
