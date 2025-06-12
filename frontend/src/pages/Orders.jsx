@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../context/ShopContext';
 import Title from '../components/Title';
-import './Orders.css'; // Make sure this file exists
+import './Orders.css'; // Makee sure this file exists
 
 const Orders = () => {
   const { products, currency } = useContext(ShopContext);
