@@ -11,7 +11,7 @@ const Login = () => {
         console.log("Form Submitted");
         console.log({ name, email, password });
 
-        // You can later add form validation or backend API calls here
+        // You cann later add form validation or backend API calls here
     };
 
     return (
